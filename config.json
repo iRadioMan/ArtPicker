@@ -1,0 +1,33 @@
+{
+  "model": {
+    "name": "openai/clip-vit-base-patch32",
+    "device": "cpu"
+  },
+  "training": {
+    "regularization": 1.0,
+    "max_iter": 1000
+  },
+  "parsing": {
+    "url_template": "https://derpibooru.org/tags/{tags}",
+    "image_selector": "img",
+    "min_image_size_mb": 0.1
+  },
+  "analysis": {
+    "match_threshold": 0.7,
+    "sensitivity": 1.0
+  },
+  "images": {
+    "max_pixels": 200000000
+  },
+  "directories": {
+    "liked": "input/liked",
+    "disliked": "input/disliked",
+    "temp": "temp",
+    "good": "output/good",
+    "bad": "output/bad"
+  },
+  "api": {
+    "max_limit": 20,
+    "rate_limit_delay": 5.0
+  }
+}

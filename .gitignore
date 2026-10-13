@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+ENV/
+
+# Models (don't commit trained models)
+model/*.pt
+!model/config.json
+
+# User-specific training images
+input/liked/*
+!input/liked/.gitkeep
+input/disliked/*
+!input/disliked/.gitkeep
+
+# Temporary files
+temp/*
+!temp/.gitkeep
+
+# Classified images are local outputs
+output/good/*
+!output/good/.gitkeep
+output/bad/*
+!output/bad/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
